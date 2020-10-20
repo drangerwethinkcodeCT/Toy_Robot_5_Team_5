@@ -43,11 +43,6 @@ def sort_ob_list_into_rings(left, right, bottom, top):
 
 def get_obstacles():
     """
-    Calls the function that creates the obstacle list,
-    And returns it.
-    """
-
-    """
     Creates 9 rings worth of obstacles as a maze.
     """
 
