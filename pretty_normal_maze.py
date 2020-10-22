@@ -13,7 +13,7 @@ def gen_horisontal(start_x, end_x, y_value):
     for i in range(11):
         door = randint(start_x, end_x)
         for x in range(start_x, end_x, 4):
-            if door in range(x - 4, x):
+            if door in range(x - 4, x) and i % 2 != 0:
                 continue
             obstacles.append((x, y_value))
         y_value += 40
@@ -36,7 +36,7 @@ def gen_vertical(start_y, end_y, x_value):
         for y in range(start_y, end_y, 4):
             if i == 5:
                 continue
-            if door in range(y - 4, y):
+            if door in range(y - 4, y) and i % 2 == 0:
                 continue
             obstacles.append((x_value, y))
         x_value += 20
