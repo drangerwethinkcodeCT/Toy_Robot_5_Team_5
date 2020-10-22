@@ -208,9 +208,10 @@ def is_position_blocked(x,y):
     else:
         return False
 
-
-
-def is_path_blocked(x1, x2, y1, y2):
+"""
+TODO: Fix the order of parameters.
+"""
+def is_path_blocked(x1, y1, x2, y2):
     """
     is_path_blocked() will check the path ahead of the robot for
     obstacles.
